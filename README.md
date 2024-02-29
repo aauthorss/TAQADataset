@@ -1,6 +1,6 @@
 # Teacher Action Quality Assessment Dataset (TAQADataset)
 
-### About the dataset：
+## About the dataset：
 
   The TAQA dataset covers four common actions of teachers during the teaching process, namely Inviting students to answer questions, Pointing to teaching devices, Walking around the classroom and Writing on the blackboard. Each action contains a detailed description of two different scenarios, positive and negative. This dataset contains a total of 3698 samples, all in mp4 format, with a resolution of 640 x 360 and a frame rate of 30fps. The detailed information is shown in Table 1.
 
@@ -30,4 +30,24 @@ Table 1. The detailed information of TAQA dataset.
 
 The detailed partition of training set and test set is given in our paper.
 
-### About the CoVL：
+## About the CoVL model：
+
+### Requirement
+Python >= 3.6
+
+Pytorch >=1.8.0
+
+### Dataset Preparation
+**1.TAQA dataset**
+
+If the article is accepted for publication, you can download our prepared TAQA dataset demo from ["Google Drive"](https://drive.google.com/drive/folders/1X9AcGqiia9dQT5bJqFR31hMnH1inxxeU?usp=sharing) . Then, please move the uncompressed data folder to `TAQA/data/frames`. We used the I3D backbone pretrained on Kinetics([Google Drive](https://drive.google.com/file/d/1M_4hN-beZpa-eiYCvIE7hsORjF18LEYU/)).
+
+**2.MTL-AQA dataset**(["Google Drive"](https://drive.google.com/file/d/1T7bVrqdElRLoR3l6TxddFQNPAUIgAJL7/))
+
+### Training & Evaluation
+
+Take **MUSDL-CoVL** as an example,To train and evaluate on TAQA:
+
+` python -u main.py  --lr 1e-4 --weight_decay 1e-5 --gpu 0 `
+
+If you use the TAQA dataset, please cite this paper: A Teacher Action Assessment Approach Based on a New Assessment Dataset.

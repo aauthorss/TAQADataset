@@ -40,13 +40,13 @@ Pytorch >=1.8.0
 ### Dataset Preparation
 **1.TAQA dataset**
 
-If the article is accepted for publication, you can download our prepared TAQA dataset demo from ["Google Drive"](https://drive.google.com/drive/folders/1X9AcGqiia9dQT5bJqFR31hMnH1inxxeU?usp=sharing) . Then, please move the uncompressed data folder to `TAQA/data/frames`. We used the I3D backbone pretrained on Kinetics([Google Drive](https://drive.google.com/file/d/1M_4hN-beZpa-eiYCvIE7hsORjF18LEYU/)).
+If the article is accepted for publication, you can download our prepared TAQA dataset demo from ["Google Drive"](https://drive.google.com/drive/folders/1E6-s_j1qkvqvBv0AYM_SYoK-ifJVPqza) . Then, please move the uncompressed data folder to `TAQA/data/frames`. We used the I3D backbone pretrained on Kinetics([Google Drive](https://drive.google.com/file/d/1M_4hN-beZpa-eiYCvIE7hsORjF18LEYU/)).
 
 **2.MTL-AQA dataset**(["Google Drive"](https://drive.google.com/file/d/1T7bVrqdElRLoR3l6TxddFQNPAUIgAJL7/))
 
 ### Training & Evaluation
 
-Take **MUSDL-CoVL** as an example,To train and evaluate on TAQA:
+CoVL, as a plug and play module, has good versatility and can be easily integrated into other models. In this study, we first select classic action quality assessment models USDL, MUSDL, and DAE as baseline models, and then integrate CoVL into the above models, namely USDL-CoVL, MUSDL-CoVL and DAE-CoVL, respectively, to evaluate the action quality.Take **MUSDL-CoVL** as an example,To train and evaluate on TAQA:
 
 ` python -u main.py  --lr 1e-4 --weight_decay 1e-5 --gpu 0 `
 

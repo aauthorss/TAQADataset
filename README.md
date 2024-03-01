@@ -1,8 +1,10 @@
 # Teacher Action Quality Assessment Dataset (TAQADataset)
 
 ## About the dataset：
+![image](https://github.com/aauthorss/TAQADataset/blob/main/CoVL/fig/Overview%20of%20TAQA.png)
+Figure 1 The comparison of the four types of teacher actions in two different contexts (positive on the left and negative on the right). (a) Inviting students to answer questions (b) Pointing to teaching devices (c) Walking around the classroom and (d) Writing on the blackboard.
 
-  The TAQA dataset covers four common actions of teachers during the teaching process, namely Inviting students to answer questions, Pointing to teaching devices, Walking around the classroom and Writing on the blackboard. Each action contains a detailed description of two different scenarios, positive and negative. This dataset contains a total of 3698 samples, all in mp4 format, with a resolution of 640 x 360 and a frame rate of 30fps. The detailed information is shown in Table 1.
+  The TAQA dataset covers four common actions of teachers during the teaching process, namely Inviting students to answer questions, Pointing to teaching devices, Walking around the classroom and Writing on the blackboard. Each action contains a detailed description of two different scenarios, positive and negative, as shown in Figure 1. This dataset contains a total of 3698 samples, all in mp4 format, with a resolution of 640 x 360 and a frame rate of 30fps. The detailed information is shown in Table 1.
 
   In addition, scores and grade labels are generated for the dataset. Among them,
 

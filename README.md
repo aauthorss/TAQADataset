@@ -52,4 +52,4 @@ CoVL, as a plug and play module, has good versatility and can be easily integrat
 
 ` python -u main.py  --lr 1e-4 --weight_decay 1e-5 --gpu 0 `
 
-If you use the TAQA dataset, please cite this paper: A Teacher Action Assessment Approach Based on a New Assessment Dataset.
+If you use the TAQA dataset, please cite this paper: A New Assessment Dataset and Approach for Teacher Action Quality Assessment in Classroom Environment.
